@@ -32,3 +32,35 @@ html{scroll-padding-top:72px}header{height:70px;padding:0 5vw;background:#020408
 .brand img{width:86px}.hero{min-height:900px;padding-top:106px}.hero h1{font-size:48px}.hero-lead br{display:none}.actions{gap:10px}.btn{width:100%;max-width:320px}.hero-brand{bottom:140px}.hero-brand>img{width:145px}.ticker div{font-size:9px;letter-spacing:3px}.section{padding:78px 6vw}.vision h2{font-size:39px}.copy .en{font-size:16px}.division-card{padding:28px;min-height:300px}.division-card>b{left:28px;bottom:28px}.asra-visual{min-height:310px}.rings{width:240px;height:240px}.asra-visual img{width:58%}.asra-copy h3{font-size:42px}.principle-grid{grid-template-columns:1fr}.principle{min-height:190px}.principle h3{margin-top:35px}.question h2{font-size:62px}.news-list a{grid-template-columns:84px 1fr}.news-list a>span{display:none}.closing h2{font-size:52px}footer{padding:42px 6vw}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker div,#loader span:after{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+/* layout hardening + ASRO manifesto */
+.copy strong{color:#f7f9fc;font-weight:700}
+.manifesto-band{position:relative;z-index:2;margin-top:74px;padding:62px 0 20px;border-top:1px solid var(--line);display:grid;grid-template-columns:.65fr 1.35fr;column-gap:7vw;row-gap:18px}
+.manifesto-band>p{margin:8px 0 0;font-size:9px;letter-spacing:3px;color:#5ebcff}
+.manifesto-band h3{margin:0;font-size:clamp(36px,4.2vw,62px);line-height:1.16;letter-spacing:-.05em}
+.manifesto-band>span{grid-column:2;font-size:13px;line-height:2;color:#9ca9b8}
+@media(min-width:901px) and (max-width:1280px){
+ header{padding-inline:4vw}
+ nav{gap:22px}
+ .hero{padding-inline:6vw}
+ .hero-copy{max-width:58%}
+ .hero h1{font-size:clamp(58px,6.2vw,78px)}
+ .hero-brand{right:6%;top:32%;width:195px}
+ .hero-brand>img{width:148px;height:112px}
+ .hero-brand p{font-size:21px;letter-spacing:7px}
+ .brand-orbit{width:235px;height:235px;left:-20px;top:-56px}
+ .hero-note{display:none}
+ .division-card{padding:27px;min-height:430px}
+ .division-card>b{left:27px;bottom:27px}
+ .division-logo img{max-width:82%}
+ footer{grid-template-columns:1fr 2.4fr 1fr}
+ footer>div{gap:16px}
+}
+@media(max-width:900px){
+ .manifesto-band{grid-template-columns:1fr;margin-top:54px;padding-top:44px}
+ .manifesto-band>span{grid-column:auto}
+}
+@media(max-width:520px){
+ .manifesto-band{margin-top:42px;padding-top:36px}
+ .manifesto-band h3{font-size:34px}
+ .manifesto-band>span{font-size:12px}
+}
