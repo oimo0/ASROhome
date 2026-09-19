@@ -14,7 +14,7 @@ nav{display:flex;gap:34px;margin:auto;font-size:9px;letter-spacing:2.4px;color:#
 .section{padding:128px 7vw}.section-index{display:flex;align-items:center;gap:18px;font-size:9px;letter-spacing:4px;color:#9aa7b5}.section-index span,.section-head>div>span{color:#34a4ff}.section-index p{margin:0}
 .vision{position:relative;overflow:hidden}.vision:after{content:"ASRO";position:absolute;right:-1vw;bottom:-80px;font-size:24vw;font-weight:800;letter-spacing:-.09em;color:#ffffff025;line-height:1}.vision-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:8vw;align-items:end;margin-top:82px}.vision h2{font-size:clamp(50px,5.8vw,86px);line-height:1.28;letter-spacing:-.055em;margin:0}.copy{color:#9aa8b8;font-size:13px;line-height:2}.copy .en{color:#e5ebf2;font-size:18px;line-height:1.65;margin-top:0}.three{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-top:92px}.three div{padding:26px 28px;border-right:1px solid var(--line);display:flex;align-items:end;gap:14px}.three div:last-child{border:0}.three b{font-size:27px}.three span{font-size:8px;color:#687889;letter-spacing:2px}
 .divisions{background:#05080d}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:68px}.section-head>div>span{font-size:9px;letter-spacing:4px}.section-head h2{font-size:clamp(48px,5.3vw,78px);line-height:1.03;letter-spacing:-.06em;margin:15px 0 0}.section-head>p,.section-head>.text-link{font-size:12px;line-height:1.9;color:#8f9cab}.text-link{transition:.2s}.text-link:hover{color:#fff}
-.division-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.division-card{min-height:460px;padding:32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden;transition:.35s background,.35s transform}.division-card:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#168cff20;filter:blur(70px);right:-90px;bottom:-90px;opacity:0;transition:.35s}.division-card:hover{background:#168cff08;transform:translateY(-3px)}.division-card:hover:after{opacity:1}.division-card .n{font-size:9px;color:#4aaeff;letter-spacing:2px}.division-logo{height:150px;display:flex;align-items:center;margin-top:55px}.division-logo img{max-width:74%;max-height:72px;object-fit:contain;object-position:left center}.division-card>p{font-size:8px;letter-spacing:2px;color:#607183;margin:0 0 20px}.division-card h3{font-size:24px;line-height:1.55;letter-spacing:-.03em;max-width:280px;margin:0}.division-card>b{position:absolute;left:32px;bottom:32px;font-size:9px;letter-spacing:1px;color:#73c8ff}
+.division-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.division-card{min-height:460px;padding:32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden;transition:.35s background,.35s transform;display:flex;flex-direction:column}.division-card:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#168cff20;filter:blur(70px);right:-90px;bottom:-90px;opacity:0;transition:.35s}.division-card:hover{background:#168cff08;transform:translateY(-3px)}.division-card:hover:after{opacity:1}.division-card .n{font-size:9px;color:#4aaeff;letter-spacing:2px}.division-logo{height:150px;display:flex;align-items:center;margin-top:55px}.division-logo img{max-width:74%;max-height:72px;object-fit:contain;object-position:left center}.division-card>p{font-size:8px;letter-spacing:2px;color:#607183;margin:0 0 20px}.division-card h3{font-size:24px;line-height:1.55;letter-spacing:-.03em;max-width:280px;margin:0}.division-card>b{position:static;display:block;margin-top:auto;padding-top:22px;font-size:9px;line-height:1.5;letter-spacing:1px;color:#73c8ff}
 .asra-panel{display:grid;grid-template-columns:1.15fr .85fr;min-height:620px;border:1px solid var(--line);background:#03070c;overflow:hidden}.asra-visual{min-height:620px;position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 50%,#0f3b68,#07101b 55%,#03070c 75%)}.asra-visual:before{content:"";position:absolute;inset:-30%;background-image:linear-gradient(#168cff15 1px,transparent 1px),linear-gradient(90deg,#168cff15 1px,transparent 1px);background-size:38px 38px;transform:perspective(600px) rotateX(58deg) rotateZ(-18deg)}.asra-visual img{position:relative;z-index:2;width:48%;filter:drop-shadow(0 20px 60px #168cff55)}.rings{position:absolute;width:340px;height:340px;border:1px solid #168cff3b;border-radius:50%;box-shadow:0 0 90px #168cff15}.rings:before,.rings:after{content:"";position:absolute;border:1px solid #ffffff12;border-radius:50%;inset:38px}.rings:after{inset:88px}.asra-copy{padding:70px 6vw;display:flex;flex-direction:column;justify-content:center}.status{font-size:8px;letter-spacing:3px;color:#63c8ff}.status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#30d38a;box-shadow:0 0 15px #30d38a;margin-right:9px}.asra-copy h3{font-size:clamp(42px,4.6vw,70px);line-height:1.08;letter-spacing:-.055em;margin:22px 0}.asra-copy>p:not(.status){font-size:13px;line-height:2;color:#94a2b1}.asra-copy>span{font-size:10px;margin-top:35px}.asra-copy>span b{color:#3bb0ff;margin-left:14px}
 .principles{background:#05080d}.principle-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:68px}.principle{min-height:300px;padding:32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.principle>span{font-size:8px;color:#37a9ff}.principle h3{font-size:40px;letter-spacing:-.05em;margin:94px 0 14px}.principle p{font-size:11px;line-height:1.8;color:#8391a1}
 .question{min-height:780px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.question>*:not(canvas):not(.question-glow){position:relative;z-index:2}#particles{position:absolute;inset:0;width:100%;height:100%}.question-glow{position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,#168cff44,transparent 70%);filter:blur(30px)}.question h2{font-size:clamp(78px,11vw,160px);letter-spacing:-.09em;margin:20px 0}.question h2 span{color:#2da1ff}.question>p:nth-of-type(2){color:#9ca8b5;line-height:2}.question small{font-size:7px;color:#5f6e7d;letter-spacing:3px;margin-top:25px}
@@ -123,4 +123,85 @@ html{scroll-padding-top:72px}header{height:70px;padding:0 5vw;background:#020408
   .manifesto-band{
     overflow:hidden;
   }
+}
+/* final mobile audit */
+@media(max-width:900px){
+  .vision{overflow:clip;contain:paint}
+  .vision::after{content:none!important;display:none!important}
+  .division-card{
+    display:flex!important;
+    flex-direction:column!important;
+    min-height:0!important;
+    height:auto!important;
+    padding-bottom:28px!important;
+  }
+  .division-card>b{
+    position:static!important;
+    inset:auto!important;
+    margin-top:18px!important;
+    padding-top:0!important;
+    transform:none!important;
+  }
+  .question{
+    width:100%;
+    max-width:100%;
+    min-height:620px;
+    padding:92px 6vw;
+    overflow:hidden;
+  }
+  .question .eyebrow{
+    width:100%;
+    max-width:100%;
+    font-size:8px;
+    letter-spacing:2.6px;
+    line-height:1.7;
+    overflow-wrap:anywhere;
+  }
+  .question .eyebrow span{width:22px;margin-right:9px}
+  .question h2{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(44px,13vw,58px)!important;
+    line-height:1.02;
+    letter-spacing:-.065em;
+    margin:24px auto 22px;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  .question>p:nth-of-type(2){
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+    font-size:16px;
+    line-height:2;
+  }
+  .question small{
+    width:100%;
+    max-width:100%;
+    letter-spacing:2.2px;
+    line-height:1.8;
+    overflow-wrap:anywhere;
+  }
+}
+@media(max-width:520px){
+  .section-head h2{font-size:clamp(38px,11vw,48px);line-height:1.08}
+  .manifesto-band h3{font-size:clamp(30px,9.5vw,38px);line-height:1.18}
+  .division-card{
+    padding:26px!important;
+  }
+  .division-logo{
+    height:auto!important;
+    min-height:86px!important;
+    margin:18px 0 6px!important;
+  }
+  .division-logo img{
+    max-width:82%!important;
+    max-height:58px!important;
+  }
+  .division-card>p{margin:4px 0 12px!important}
+  .division-card h3{font-size:20px!important;line-height:1.48}
+  .division-card>b{margin-top:14px!important}
+  .question{padding:84px 6vw;min-height:600px}
+  .question h2{font-size:clamp(42px,12.5vw,54px)!important}
+  .question>p:nth-of-type(2){font-size:15px}
 }
