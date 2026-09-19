@@ -22,3 +22,58 @@ footer{display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;padding
 .hero{height:auto;max-height:none;min-height:880px;padding:108px 6vw 80px;grid-template-columns:1fr;grid-template-rows:auto auto;gap:54px;align-content:center}.hero-copy{max-width:620px}.hero h1{font-size:clamp(48px,12vw,68px)}.hero-lead{font-size:14px;line-height:1.9}.hero-brand{justify-self:center}.hero-brand>img{width:145px;height:108px}.hero-brand p{font-size:20px;margin-top:10px}.brand-orbit{width:220px;height:220px}.earth{height:240px;bottom:-205px}.ticker div{font-size:9px;letter-spacing:3px}.section{padding:88px 6vw}.vision-grid{grid-template-columns:1fr;gap:36px;margin-top:48px}.vision h2{font-size:clamp(40px,9vw,58px)}.three{grid-template-columns:1fr;margin-top:52px}.three div{border-right:0;border-bottom:1px solid var(--line)}.manifesto-band{grid-template-columns:1fr;margin-top:48px;padding-top:40px}.manifesto-band>span{grid-column:auto}.section-head{display:block;margin-bottom:42px}.section-head>p,.section-head>.text-link{display:block;margin-top:20px}.division-grid{grid-template-columns:1fr}.division-card{min-height:0;padding:28px}.division-logo{height:94px;margin-top:18px}.division-card>b{margin-top:16px;padding-top:0}.asra-panel{grid-template-columns:1fr}.asra-visual{min-height:330px}.asra-copy{padding:44px 7vw}.principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.principle{min-height:210px}.principle h3{margin-top:48px}.question{min-height:620px;padding:90px 6vw}.question .eyebrow{font-size:8px;letter-spacing:2px;white-space:normal}.question h2{font-size:clamp(44px,12vw,58px);letter-spacing:-.06em;margin:24px 0;white-space:nowrap}.question>p:nth-of-type(2){font-size:16px}.question small{font-size:7px;letter-spacing:2px}.news-list a{grid-template-columns:92px minmax(0,1fr) 24px}.news-list b{display:none}.news-list p{font-size:11px}.closing{min-height:620px}.closing h2{font-size:clamp(48px,11vw,68px)}footer{grid-template-columns:1fr 1fr}footer>div{display:none}}
 @media(max-width:480px){.brand img{width:86px}.hero{min-height:840px;padding:98px 6vw 72px}.hero h1{font-size:46px}.hero-lead br{display:none}.actions{gap:10px}.btn{width:100%;max-width:310px}.hero-brand>img{width:138px}.section{padding:74px 6vw}.vision h2{font-size:38px}.copy .en{font-size:16px}.manifesto-band h3{font-size:32px}.section-head h2{font-size:40px}.division-card{padding:24px}.division-logo{height:82px}.division-logo img{max-width:82%;max-height:58px}.division-card h3{font-size:19px}.asra-visual{min-height:280px}.asra-visual img{width:58%}.rings{width:235px;height:235px}.asra-copy h3{font-size:38px}.principle-grid{grid-template-columns:1fr}.principle{min-height:180px}.principle h3{margin-top:32px}.question{min-height:580px;padding:78px 24px}.question h2{font-size:clamp(40px,12.2vw,52px);gap:.02em}.question>p:nth-of-type(2){font-size:15px}.news-list a{grid-template-columns:82px minmax(0,1fr)}.news-list a>span{display:none}.closing h2{font-size:48px}footer{padding:40px 6vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker div,#loader span:after{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+/* ambient motion: subtle, slow, and brand-safe */
+.brand-orbit{
+  animation:orbitDrift 34s linear infinite;
+  transform-origin:50% 50%;
+}
+.brand-orbit:after{
+  animation:orbitPulse 8s ease-in-out infinite;
+}
+.hero-brand>img{
+  animation:brandFloat 7.5s ease-in-out infinite;
+}
+.earth{
+  animation:earthBreath 11s ease-in-out infinite;
+}
+.earth:before{
+  content:"";
+  position:absolute;
+  inset:-2px 8% auto;
+  height:7px;
+  border-radius:999px;
+  background:linear-gradient(90deg,transparent,#61d9ff22,#d9f6ffcc,#61d9ff30,transparent);
+  filter:blur(5px);
+  opacity:.55;
+  animation:horizonSweep 13s ease-in-out infinite;
+}
+.earth i{
+  animation:horizonFlare 9s ease-in-out infinite;
+}
+@keyframes orbitDrift{
+  from{transform:translate(-50%,-62%) rotateX(68deg) rotateZ(0deg)}
+  to{transform:translate(-50%,-62%) rotateX(68deg) rotateZ(360deg)}
+}
+@keyframes orbitPulse{
+  0%,100%{opacity:.4;transform:scale(.98)}
+  50%{opacity:.85;transform:scale(1.025)}
+}
+@keyframes brandFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+@keyframes earthBreath{
+  0%,100%{filter:brightness(.96);box-shadow:0 -1px 3px #82dfff,0 -8px 38px #168cff88,0 -60px 140px #087cff30}
+  50%{filter:brightness(1.08);box-shadow:0 -1px 4px #c9f4ff,0 -10px 46px #29a5ff99,0 -70px 160px #087cff38}
+}
+@keyframes horizonSweep{
+  0%,100%{transform:translateX(-12%) scaleX(.92);opacity:.28}
+  50%{transform:translateX(12%) scaleX(1.05);opacity:.72}
+}
+@keyframes horizonFlare{
+  0%,100%{transform:translateX(-10%);opacity:.65}
+  50%{transform:translateX(18%);opacity:1}
+}
+@media(prefers-reduced-motion:reduce){
+  .brand-orbit,.brand-orbit:after,.hero-brand>img,.earth,.earth:before,.earth i{animation:none}
+}
