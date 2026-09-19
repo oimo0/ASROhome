@@ -15,3 +15,34 @@ footer{border-top:1px solid var(--line);padding:45px 6vw;display:flex;align-item
 @media(max-width:800px){header{height:66px;padding:0 5vw}.brand img{width:86px}nav{gap:15px}nav a:nth-child(2),nav a:nth-child(3){display:none}.hero{min-height:68svh;padding:122px 6vw 72px}.hero h1{font-size:clamp(56px,16vw,86px)}.wrap{padding:80px 6vw}.grid2{grid-template-columns:1fr;gap:46px}.visual{min-height:310px}.visual img{max-height:145px}.cards{grid-template-columns:1fr}.card{min-height:200px}.card h3{margin-top:44px}.brand-strip{grid-template-columns:1fr}.brand-strip a{min-height:150px;border-right:0;border-bottom:1px solid var(--line)}.status-card{margin:0 5vw 70px;padding:45px 26px}.cta{margin:20px 5vw 70px;padding:48px 26px}}
 @media(max-width:520px){nav{display:none}.hero{min-height:620px;padding-top:105px}.hero h1{font-size:54px}.lead{font-size:18px}.title{font-size:40px}.visual{min-height:280px}.visual img{max-width:76%;max-height:125px}.copy{font-size:12px}.status-card h2,.cta h2{font-size:43px}footer{padding:38px 6vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+/* secondary-page spacing and narrative sections */
+.origin{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,#020408,#050a11)}
+.origin-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:start;margin-top:34px}
+.manifesto-page{position:relative;overflow:hidden;padding-top:130px;padding-bottom:140px}
+.manifesto-page:after{content:"ASRO";position:absolute;right:-2vw;bottom:-7vw;font-size:24vw;font-weight:800;letter-spacing:-.09em;color:#ffffff025;line-height:1;pointer-events:none}
+.manifesto-page h2{position:relative;z-index:1;font-size:clamp(54px,7vw,100px);line-height:1;letter-spacing:-.065em;margin:22px 0 34px}
+.manifesto-page h2 em{font-style:normal;background:linear-gradient(110deg,#168cff,#6ae1ff);-webkit-background-clip:text;color:transparent}
+.manifesto-page>p:last-child{position:relative;z-index:1;max-width:760px;font-size:14px;line-height:2.15;color:#a2afbd}
+.manifesto-page strong{color:#fff}
+@media(min-width:801px) and (max-width:1120px){
+ header{padding-inline:4.5vw}
+ nav{gap:18px}
+ .hero{padding-inline:6vw}
+ .hero h1{font-size:clamp(68px,10vw,108px)}
+ .grid2{gap:6vw}
+ .title{font-size:clamp(40px,5vw,58px)}
+ .visual{min-height:360px}
+ .visual img{max-width:74%;max-height:155px}
+ .card{padding:27px}
+ .brand-strip a{padding:28px}
+}
+@media(max-width:800px){
+ .origin-grid{grid-template-columns:1fr;gap:28px}
+ .manifesto-page{padding-top:90px;padding-bottom:100px}
+}
+@media(max-width:520px){
+ .about-intro{padding-bottom:68px}
+ .origin{padding-top:70px;padding-bottom:70px}
+ .manifesto-page h2{font-size:46px}
+ .manifesto-page>p:last-child{font-size:12px;line-height:2}
+}
