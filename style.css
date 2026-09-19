@@ -77,3 +77,15 @@ footer{display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;padding
 @media(prefers-reduced-motion:reduce){
   .brand-orbit,.brand-orbit:after,.hero-brand>img,.earth,.earth:before,.earth i{animation:none}
 }
+/* contact */
+.closing-contact-copy{margin:0 0 4px;color:#9eabb9;font-size:13px;line-height:1.9}
+.closing-actions{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+.closing-actions .btn{margin-top:20px}
+.contact-btn{min-width:190px}
+.footer-contact{color:#78c9ff}
+.footer-contact:hover{color:#fff}
+@media(max-width:480px){
+  .closing-contact-copy{font-size:12px}
+  .closing-actions{width:100%;max-width:310px}
+  .closing-actions .btn{width:100%}
+}
