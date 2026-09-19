@@ -17,3 +17,42 @@ footer{border-top:1px solid var(--line);padding:44px 6vw;display:flex;align-item
 @media(max-width:800px){html{scroll-padding-top:66px}header{height:66px;padding:0 5vw}.brand img{width:86px}nav{gap:16px}nav a{display:none}nav a:first-child,nav a:last-child{display:block}.hero{height:auto;min-height:620px;padding:112px 6vw 72px}.hero h1{font-size:clamp(52px,14vw,78px)}.lead{width:100%;max-width:100%;font-size:18px;line-height:1.65;white-space:normal;overflow-wrap:anywhere}.wrap{padding:80px 6vw}.grid2{grid-template-columns:1fr;gap:42px}.visual{min-height:300px}.visual img{max-height:135px}.cards{grid-template-columns:1fr}.card{min-height:190px}.card h3{margin-top:38px}.brand-strip{grid-template-columns:1fr}.brand-strip a{min-height:140px;border-right:0;border-bottom:1px solid var(--line)}.brand-strip a:last-child{border-bottom:0}.status-card{margin:0 5vw 70px;padding:44px 26px}.cta{margin:20px 5vw 70px;padding:46px 26px}.origin-grid{grid-template-columns:1fr;gap:28px}.manifesto-page{padding-top:86px;padding-bottom:96px}.manifesto-page:after{display:none}}
 @media(max-width:480px){header nav a:last-child{display:none}.hero{min-height:560px;padding:96px 6vw 64px}.hero h1{font-size:48px;line-height:.96}.lead{font-size:17px;line-height:1.7;max-width:100%;white-space:normal;overflow-wrap:anywhere}.title{font-size:39px}.copy{font-size:12px}.copy .big{font-size:16px}.visual{min-height:270px}.visual img{max-width:76%;max-height:120px}.status-card h2,.cta h2{font-size:42px}.manifesto-page h2{font-size:44px}.manifesto-page>p:last-child{font-size:12px;line-height:2}footer{padding:38px 6vw;flex-direction:column;align-items:flex-start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+/* About hero: hard layout guard */
+.hero-about .about-tagline{
+  width:min(100%,520px);
+  max-width:520px;
+  margin:0;
+  white-space:normal;
+}
+.hero-about .about-tagline span{
+  display:block;
+  width:100%;
+}
+@media(max-width:800px){
+  .hero-about{
+    min-height:600px;
+  }
+  .hero-about .about-tagline{
+    width:min(100%,360px);
+    max-width:360px;
+    font-size:18px;
+    line-height:1.7;
+  }
+}
+@media(max-width:480px){
+  .hero-about{
+    min-height:540px;
+    padding:94px 6vw 58px;
+  }
+  .hero-about h1{
+    font-size:46px;
+    line-height:.96;
+    margin:18px 0 24px;
+  }
+  .hero-about .about-tagline{
+    width:min(100%,300px);
+    max-width:300px;
+    font-size:16px;
+    line-height:1.75;
+  }
+}
