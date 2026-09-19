@@ -64,3 +64,63 @@ html{scroll-padding-top:72px}header{height:70px;padding:0 5vw;background:#020408
  .manifesto-band h3{font-size:34px}
  .manifesto-band>span{font-size:12px}
 }
+/* definitive mobile flow fixes */
+@media(max-width:900px){
+  .vision:after{display:none}
+  .division-card{
+    min-height:0;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .division-card .n{display:block}
+  .division-logo{
+    height:110px;
+    min-height:110px;
+    margin-top:28px;
+    display:flex;
+    align-items:center;
+  }
+  .division-card>p{margin:0 0 14px}
+  .division-card h3{
+    margin:0;
+    max-width:none;
+    line-height:1.45;
+  }
+  .division-card>b{
+    position:static;
+    display:block;
+    margin-top:18px;
+    padding-top:0;
+    line-height:1.5;
+  }
+}
+@media(max-width:520px){
+  .division-card{
+    padding:28px;
+    gap:0;
+  }
+  .division-logo{
+    height:96px;
+    min-height:96px;
+    margin-top:20px;
+  }
+  .division-logo img{
+    max-width:78%;
+    max-height:62px;
+  }
+  .division-card>p{
+    margin:2px 0 14px;
+  }
+  .division-card h3{
+    font-size:21px;
+    line-height:1.5;
+  }
+  .division-card>b{
+    margin-top:16px;
+    font-size:9px;
+  }
+  .manifesto-band{
+    overflow:hidden;
+  }
+}
